@@ -5,10 +5,10 @@ class FixedFloat:
     def __repr__(self):
         return f"< FixedFloat {self.amount:.2f}>"
 
-
-    def from_sum(self, value1, value2):
+    @staticmethod  
+    def from_sum(value1, value2):
         return  FixedFloat(value1 + value2)    
 
-number = FixedFloat(18.5888)
-new_number = number.from_sum(19.58, 18.56)
+
+new_number = FixedFloat.from_sum(19.58, 18.56)
 print(new_number)

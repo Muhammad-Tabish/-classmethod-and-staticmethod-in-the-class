@@ -20,6 +20,7 @@ class dollar(FixedFloat):
     def __repr__(self):
         return f'<Dollar {self.symbol} {self.amount:.2f}>'
 
-    
+money = dollar.from_sum(18.56, 1956)
+print(money)
 
         
